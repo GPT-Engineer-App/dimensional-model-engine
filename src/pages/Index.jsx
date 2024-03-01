@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Text, Center, VStack, IconButton } from "@chakra-ui/react";
+import { Box, Text, Center, VStack, IconButton, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaCube } from "react-icons/fa";
 
 const Index = () => {
@@ -24,6 +25,9 @@ const Index = () => {
           <Text mt={3} color="gray.500">
             A conceptual interface representing an engine capable of handling multi-dimensional models.
           </Text>
+          <Button as={Link} to="/create" colorScheme="blue" size="lg">
+            Create Model
+          </Button>
         </Box>
       </VStack>
     </Center>
